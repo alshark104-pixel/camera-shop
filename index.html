@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الكاميرات - Camera Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">📷 Camera Shop</h1>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#jokes">الفكاهة اليومية</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>أفضل الكاميرات الاحترافية</h2>
+            <p>اكتشف عالم التصوير الفوتوغرافي مع أحدث التقنيات</p>
+            <button class="btn">تسوق الآن</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>المنتجات المميزة</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Camera+1" alt="كاميرا احترافية">
+                    <h3>كاميرا Canon Pro</h3>
+                    <p class="price">$1,299</p>
+                    <p>كاميرا DSLR احترافية عالية الجودة</p>
+                    <button class="btn-buy">أضف للسلة</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Camera+2" alt="كاميرا ميرورليس">
+                    <h3>كاميرا Sony Mirrorless</h3>
+                    <p class="price">$1,499</p>
+                    <p>كاميرا ميرورليس بتقنية متقدمة</p>
+                    <button class="btn-buy">أضف للسلة</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Camera+3" alt="كاميرا نيكون">
+                    <h3>كاميرا Nikon Z6</h3>
+                    <p class="price">$1,999</p>
+                    <p>كاميرا احترافية بدقة عالية جداً</p>
+                    <button class="btn-buy">أضف للسلة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Joke Generator Section -->
+    <section id="jokes" class="jokes-section">
+        <div class="container">
+            <h2>😂 نكتة اليوم</h2>
+            <p class="subtitle">استمتع بنكتة طريفة جديدة كل مرة!</p>
+            
+            <div class="joke-container">
+                <div id="joke-display" class="joke-box">
+                    <p id="joke-text">اضغط الزر للحصول على نكتة...</p>
+                </div>
+                <button id="joke-btn" class="btn-joke">احصل على نكتة</button>
+                <button id="joke-copy-btn" class="btn-copy" style="display:none;">نسخ النكتة</button>
+            </div>
+
+            <div id="joke-loading" class="loading" style="display:none;">
+                <div class="spinner"></div>
+                <p>جاري تحميل النكتة...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>اتصل بنا</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="اسمك" required>
+                <input type="email" placeholder="بريدك الإلكتروني" required>
+                <textarea placeholder="رسالتك" rows="5" required></textarea>
+                <button type="submit" class="btn">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Camera Shop. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
